@@ -1,4 +1,5 @@
 #include "roBa.dtsi"
+#include <dt-bindings/zmk/keys.h>
 
 &default_transform {
     col-offset = <6>;
@@ -57,5 +58,18 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+    arrows {
+        layers = <3>;
+        bindings =
+            <&kp RIGHT_ARROW>,
+            <&kp LEFT_ARROW>,
+            <&kp UP_ARROW>,
+            <&kp DOWN_ARROW>;
+
+        tick = <10>;
+        wait-ms = <5>;
+        tap-ms = <5>;
+    };
+
     };
 };
