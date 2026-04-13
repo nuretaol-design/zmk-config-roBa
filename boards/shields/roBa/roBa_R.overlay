@@ -1,5 +1,6 @@
 #include "roBa.dtsi"
 #include <dt-bindings/zmk/keys.h>
+#include <input/processors.dtsi>
 
 &default_transform {
     col-offset = <6>;
@@ -15,11 +16,21 @@
             ;
 };
 
+&zip_temp_layer {
+    excluded-positions = <
+        18 // J
+        19 // K
+        21 // ;
+        34 // Ctrl
+    >;
+};
+
 / {
     trackball_listener {
         status = "okay";
         compatible = "zmk,input-listener";
         device = <&trackball>;
+        input-processors = <&zip_temp_layer 4 10000>;
     };
 };
 
