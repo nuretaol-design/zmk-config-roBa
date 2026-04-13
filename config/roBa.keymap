@@ -7,7 +7,7 @@
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 #define MOUSE 4
-
+/*
 /{
     macros {
         exit_AML: exit_AML {
@@ -50,7 +50,7 @@
         };
     };
 }
-
+*/
  &mt {
     flavor = "balanced";
     quick-tap-ms = <0>;
