@@ -20,17 +20,21 @@
     excluded-positions = <
         18 // J
         19 // K
+        20 // L
         21 // ;
+        30 
+        31
+        32
         34 // Ctrl
     >;
+    require-prior-idle-ms = <200>;
 };
-
 / {
     trackball_listener {
         status = "okay";
         compatible = "zmk,input-listener";
         device = <&trackball>;
-        input-processors = <&zip_temp_layer 4 10000>;
+        input-processors = <&zip_temp_layer 4 100000>;
     };
 };
 
