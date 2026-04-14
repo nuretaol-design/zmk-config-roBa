@@ -15,7 +15,7 @@
             , <&gpio0 10 GPIO_ACTIVE_HIGH>
             ;
 };
-/*
+
 &zip_temp_layer {
     excluded-positions = <
         18 // J
@@ -29,7 +29,7 @@
     >;
     require-prior-idle-ms = <200>;
 };
-
+/*
 / {
     trackball_listener {
         status = "okay";
