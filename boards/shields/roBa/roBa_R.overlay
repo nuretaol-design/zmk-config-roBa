@@ -29,7 +29,7 @@
     >;
     require-prior-idle-ms = <200>;
 };
-/*
+
 / {
     trackball_listener {
         status = "okay";
@@ -38,7 +38,7 @@
         input-processors = <&zip_temp_layer 4 100000>;
     };
 };
-*/
+
 &pinctrl {
     spi0_default: spi0_default {
         group1 {
